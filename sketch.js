@@ -75,16 +75,16 @@ if(r==0){
   var y = speedY * yDir;
   var x = speedX * xDir;
 
-  var  vol = mic.getLevel()*100;
+  var  vol = mic.getLevel()*1000;
   console.log(vol);
 
-  if(vol > 40 && v==1){
+  if(vol > 10 && v==1){
     background('#FE654F');
     image(myImage01A,x + width/2, y + height/2, 378, 579);
-  } else if(vol > 40 && v == 3){
+  } else if(vol > 10 && v == 3){
     background('#8963BA');
     image(myImage02A,x + width/2, y + height/2, 378, 579);
-  } else if(vol > 40 && v == 2){
+  } else if(vol > 10 && v == 2){
     background('#8963BA');
     image(myImage03A,x + width/2, y + height/2, 378, 579);
   }
